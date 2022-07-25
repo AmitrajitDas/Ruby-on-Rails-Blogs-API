@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  resources :users, param: :_username do
-    resources :blogs
-  end
+  resources :users, param: :_username
+  resources :blogs
+  
 
   post "/login", to: "authentication#login"
   
