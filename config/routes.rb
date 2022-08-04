@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  resources :users, param: :_username
+  resources :users
   resources :blogs do
     resources :comments
   end
